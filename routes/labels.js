@@ -17,7 +17,6 @@ router.get('/api/labels', async  (req, res) => {
 
 router.post('/api/labels', (req, res)  => {
     const {name, product_id} = req.body;
-    console.log(req.body)
     let sql = ` INSERT INTO labels(name, product_id)
                     VALUES('${name}', '${product_id}')`;
 

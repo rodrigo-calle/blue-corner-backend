@@ -11,7 +11,6 @@ router.get('/api/products', (req, res) => {
     connectDB.query(products, (err, results) => {
         if(err) console.log(err)
         res.send(results);
-        console.log(results);
     })
 });
 
@@ -33,7 +32,6 @@ router.get('/api/products/last', (req, res) => {
     connectDB.query(product, (err, results) => {
         if(err) console.log(err)
         res.send(results);
-        console.log(results);
     })                
 }) 
 
